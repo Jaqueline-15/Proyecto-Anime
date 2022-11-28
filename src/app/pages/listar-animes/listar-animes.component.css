@@ -1,0 +1,15 @@
+.altura{
+ width: 70%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+}
+
+.imagenes{
+    width: 100%;
+    height: 60%;
+}
+
+.espacio{
+    padding-right: 3%;
+}

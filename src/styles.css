@@ -1,0 +1,29 @@
+.fondo{
+   
+    background-image: url("https://images8.alphacoders.com/107/1073290.jpg");
+background-attachment: "fixed";
+background-position: "top right";
+background-repeat: "no-repeat";
+
+}
+
+.cajatexto{
+    background-color: rgba(240, 248, 255, 0.589);
+}
+
+.form-group label{
+    color: indigo;
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.texttitle{
+    color: green;
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: rgba(240, 248, 255, 0.589);
+}
+

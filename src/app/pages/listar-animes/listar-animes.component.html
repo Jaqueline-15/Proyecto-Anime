@@ -1,0 +1,32 @@
+<br />
+<div class="container">
+
+    <!--mensaje por si no hay empleados registrados-->
+    <p *ngIf="Animes.length <= 0" class="text-center">No hay animes registrados</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 altura ">
+<div *ngFor="let anime of Animes; let i=index" class="col">
+        <div class="card h-100">
+          <img src="{{ anime.imagen }}" class="card-img-top imagenes" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">{{ anime.nombre }}</h5>
+            <p class="card-text">{{ anime.sinopsis }}</p>
+            <p class="card-text">Temporadas: {{ anime.temporada }}</p>
+            <p class="card-text">Genero: {{ anime.genero }}</p>
+            
+            <span [routerLink]="['/editar-anime/', anime._id]" class="espacio">
+                <button type="button" class="btn btn-warning btn-sm">Editar</button>
+            </span>
+   
+            <span (click)="eliminarAnime(anime,i)">
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+            </span>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Autor: {{ anime.autor }} </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
